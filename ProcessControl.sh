@@ -28,3 +28,22 @@ else
    echo "没有符合的条件"
 fi
 
+:<<EOF
+for var in item1 item2 ... itemN
+do
+    command1
+    command2
+    ...
+    commandN
+done
+EOF
+
+for v in 1 2 3 4 5
+do
+   echo "v is $v"
+done
+
+for s in 'This is a demo'
+do
+   echo $s
+done

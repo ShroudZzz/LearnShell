@@ -47,3 +47,24 @@ for s in 'This is a demo'
 do
    echo $s
 done
+
+:<<EOF
+while condition
+do
+    command
+done
+EOF
+
+i=0
+while(($i<=5))
+do
+  echo $i
+  let "i++"
+done
+
+echo 'press CTRL-D exit'
+echo -n "input any"
+while read FILM
+do
+  echo 'yes $FILM is not bad'
+done

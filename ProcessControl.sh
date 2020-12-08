@@ -84,3 +84,28 @@ do
   echo $a
   a=`expr $a + 1`
 done
+
+
+:<<EOF
+case v in
+mod1)
+   command1
+   command2
+esac
+EOF
+
+echo "input 1 ~ 4"
+echo "input num:"
+read num
+case $num in
+     1) echo 'input 1'
+     ;;
+     2)  echo 'input 2'
+     ;;
+     3)  echo 'input 3'
+     ;;
+     4)  echo 'input 4'
+     ;;
+     *)  echo 'not input'
+     ;;
+esac
